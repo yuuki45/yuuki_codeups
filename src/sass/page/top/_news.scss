@@ -1,0 +1,132 @@
+.news {
+  margin-bottom: rem(101);
+}
+
+.news__container {
+  width: rem(1100);
+  max-width: 100%;
+
+  @include mq("md") {
+    display: flex;
+    margin: auto;
+    padding: 0 rem(20);
+  }
+}
+
+.news__box {
+  padding: rem(23) rem(19) rem(0) rem(19);
+
+  @include mq("md") {
+    width: rem(1100);
+    max-width: 100%;
+    display: flex;
+    padding: 0 0 0 rem(0);
+    margin-top: rem(32);
+  }
+}
+
+.news__date {
+  display: inline-block;
+  line-height: rem(23);
+  padding: rem(5) rem(30) rem(5) rem(0);
+
+  @include mq("md") {
+    display: block;
+    padding-right: rem(49);
+    padding-left: rem(8);
+  }
+}
+
+.news__category {
+  display: inline-block;
+  font-size: rem(14);
+  line-height: rem(20);
+  border: 1px solid $white;
+  padding: rem(5) rem(21);
+
+  @include mq("md") {
+    display: block;
+    min-width: rem(100);
+    max-height: rem(32);
+    padding-right: rem(19);
+    margin-right: rem(58);
+  }
+}
+
+.news__title {
+  display: block;
+  line-height: rem(23);
+  font-weight: $normal;
+  padding: rem(16) rem(0) rem(28) rem(0);
+  position: relative;
+
+  @include mq("md") {
+    max-width: 100%;
+    max-height: 100%;
+    padding: rem(3) 0;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 0;
+    background-color: $white;
+    height: rem(1);
+    transition: all 0.3s ease;
+  }
+
+  &:hover::after {
+    width: 100%;
+  }
+}
+
+.news__button {
+  width: rem(335);
+  font-size: rem(20);
+  line-height: rem(29);
+  letter-spacing: rem(2);
+  display: block;
+  margin: 0 auto;
+  background-color: #333333;
+  border: 1px solid $white;
+  padding: rem(9) rem(0) rem(9) rem(0);
+  text-align: center;
+  position: relative;
+
+  @include mq("md") {
+    max-width: rem(134);
+    max-height: rem(32);
+    font-size: rem(16);
+    line-height: rem(23);
+    letter-spacing: rem(0);
+    font-weight: $normal;
+    padding: rem(3) rem(0) rem(4) rem(0);
+    background-color: $white;
+    color: $black;
+    border: none;
+    margin-top: rem(32);
+    margin-right: rem(5);
+  }
+
+  &::before {
+    position: absolute;
+    z-index: -1;
+    content: "";
+    display: block;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #333333;
+    transition: all 0.3s ease;
+  }
+
+  &:hover::before {
+    width: 100%;
+  }
+
+  &:hover {
+    color: $white;
+  }
+}

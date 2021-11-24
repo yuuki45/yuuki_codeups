@@ -1,0 +1,17 @@
+.blog {
+    padding-top: rem(99);
+    padding-bottom: rem(120);
+}
+
+.section-title--blog {
+    @include section-title("Blog")
+}
+
+.blog__container {
+    padding-top: rem(64);
+}
+
+.blog__box {
+    padding: 0 rem(20);
+    margin-bottom: rem(24);
+}

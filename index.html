@@ -1,34 +1,221 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-  <meta name="format-detection" content="telephone=no" />
-  <!-- meta情報 -->
-  <title></title>
-  <meta name="description" content="" />
-  <meta name="keywords" content="" />
-  <!-- ogp -->
-  <meta property="og:title" content="" />
-  <meta property="og:type" content="" />
-  <meta property="og:url" content="" />
-  <meta property="og:image" content="" />
-  <meta property="og:site_name" content="" />
-  <meta property="og:description" content="" />
-  <!-- ファビコン -->
-  <link rel="”icon”" href="" />
-  <!-- グーグルフォント -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
-  <!-- css -->
-  <link rel="stylesheet" href="./assets/css/styles.css">
-  <!-- JavaScript -->
-  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-  <script defer type="text/javascript" src="./assets/js/script.js"></script>
-</head>
-<body>
-  <header class="header">codeups</header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <!-- meta情報 -->
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <!-- ogp -->
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:description" content="" />
+    <!-- ファビコン -->
+    <link rel="”icon”" href="" />
+    <!-- グーグルフォント -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- slick css -->
+    <link rel="stylesheet" href="./assets/css/swiper.min.css" />
+    <!-- css -->
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script defer type="text/javascript" src="./assets/js/swiper.min.js"></script>
+    <script defer type="text/javascript" src="./assets/js/script.js"></script>
+    <script defer type="text/javascript" src="./assets/js/script_my.js"></script>
+  </head>
 
-</body>
+  <body>
+    <!-- ヘッダー -->
+    <header class="header">
+      <div class="header__container">
+        <div class="header__logo">
+          <img src="/assets/images/common/codeups.svg" alt="サイトロゴ" />
+        </div>
+        <div class="header__menu u-desktop">
+          <ul>
+            <li><a class="header__link" href="">お知らせ</a></li>
+            <li><a class="header__link" href="">事業内容</a></li>
+            <li><a class="header__link" href="">制作実績</a></li>
+            <li><a class="header__link" href="">企業概要</a></li>
+            <li><a class="header__link" href="">ブログ</a></li>
+            <li><a class="header__contact-button" href="">お問い合わせ</a></li>
+          </ul>
+        </div>
+        <button class="header__hamburger-button js-hamburger u-mobile">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- ドロワーメニュー -->
+    <div class="drawer js-drawer">
+      <ul>
+        <li><a href="">トップ</a></li>
+        <li><a href="">お知らせ</a></li>
+        <li><a href="">事業内容</a></li>
+        <li><a href="">制作実績</a></li>
+        <li><a href="">企業概要</a></li>
+        <li><a href="">ブログ</a></li>
+        <li><a href="">お問い合わせ</a></li>
+      </ul>
+    </div>
+
+    <!-- メインビジュアル -->
+    <div class="main-visual">
+      <div class="main-visual__slider">
+        <div class="main-visual__image"></div>
+        <div class="main-visual__image"></div>
+        <div class="main-visual__image"></div>
+      </div>
+      <h1 class="main-visual__main-title">メインタイトルが入ります</h1>
+      <p class="main-visual__sub-title">サブタイトルが入ります</p>  
+    </div>
+
+    <!-- お知らせ -->
+    <section class="news">
+      <div class="news__container">
+        <div class="news__box">
+          <div class="news__date">2020.07.20</div>
+          <div class="news__category">お知らせ</div>
+          <a href="" class="news__title">記事タイトルが入ります。記事タイトルが入ります。記事タイトルが入ります。</a>
+        </div>
+        <a href="" class="news__button">すべて見る</a>
+      </div>
+    </section>
+
+    <!-- 事業内容 -->
+    <section class="content">
+      <h2 class="section-title--content section-title__layout">事業内容</h2>
+      <div class="content__container">
+        <a href="" class="content__image"><span></span>
+          <img class="u-mobile" src="/assets/images/content/content_00_sp.png" alt="経営理念1">
+          <img class="u-desktop" src="/assets/images/content/content_00.png" alt="経営理念1">
+        </a>
+        <a href="" class="content__image content__image--vision1"><span></span>
+          <img class="u-mobile" src="/assets/images/content/content_01_sp.png" alt="経営理念2">
+          <img class="u-desktop" src="/assets/images/content/content_01.png" alt="経営理念2">
+        </a>
+        <a href="" class="content__image content__image--vision2"><span></span>
+          <img class="u-mobile" src="/assets/images/content/content_02_sp.png" alt="経営理念3">
+          <img class="u-desktop" src="/assets/images/content/content_02.png" alt="経営理念3">
+        </a>
+        <a href="" class="content__image content__image--vision3"><span></span>
+          <img class="u-mobile" src="/assets/images/content/content_03_sp.png" alt="経営理念4">
+          <img class="u-desktop" src="/assets/images/content/content_03.png" alt="経営理念4">
+        </a>
+      </div>
+    </section>
+
+    <!-- 制作実績 -->
+    <section class="works">
+      <h2 class="section-title--works section-title__layout">制作実績</h2>
+      <div class="works__container">
+        <div class="swiper">
+          <!-- Swiperここから -->
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <!-- スライダー中身 -->
+              <div class="swiper-slide">
+                <img src="/assets/images/works/works_01.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="/assets/images/works/works_02.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="/assets/images/works/works_03.jpg" alt="">
+              </div>
+            </div>
+          </div>
+          <!-- Swiperここまで -->
+          <!-- ページネーション -->
+          <div class="swiper-pagination"></div>
+        </div>
+        <div class="common-box">
+          <h3 class="common-box__title">メインタイトルが入ります。</h3>
+          <div class="common-box__text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</div>
+          <a href="" class="base-button">詳しく見る</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 企業概念 -->
+    <section class="overview">
+      <h2 class="section-title--overview section-title__layout">企業概念</h2>
+      <div class="overview__container">
+        <div class="overview__image">
+          <img src="/assets/images/overview/overview_01.jpg" alt="">
+        </div>
+        <div class="common-box">
+          <h3 class="common-box__title">メインタイトルが入ります。</h3>
+          <div class="common-box__text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</div>
+          <a href="" class="base-button">詳しく見る</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ブログ -->
+    <section class="blog">
+      <h2 class="section-title--blog section-title__layout">ブログ</h2>
+      <div class="blog__container">
+        <div class="blog__box">
+          <a href="" class="blog-card">
+            <div class="blog-card__image">
+              <img src="/assets/images/blog/blog_01.jpg" alt="">
+            </div>
+            <div class="blog-card__title">タイトルが入ります。タイトルが入ります。</div>
+            <div class="blog-card__caption">説明文が入ります。説明文が入ります。説明文が入ります。</div>
+            <div class="blog-card__category-date">
+              <div class="blog-card__category">カテゴリ</div>
+              <div class="blog-card__date">2021.07.20</div>
+            </div>
+          </a>
+          <a href="" class="blog-card">
+            <div class="blog-card__image">
+              <img src="/assets/images/blog/blog_02.jpg" alt="">
+            </div>
+            <div class="blog-card__title">タイトルが入ります。タイトルが入ります。</div>
+            <div class="blog-card__caption">説明文が入ります。説明文が入ります。説明文が入ります。</div>
+            <div class="blog-card__category-date">
+              <div class="blog-card__category">カテゴリ</div>
+              <div class="blog-card__date">2021.07.20</div>
+            </div>
+          </a>
+          <a href="" class="blog-card">
+            <div class="blog-card__image">
+              <img src="/assets/images/blog/blog_03.jpg" alt="">
+            </div>
+            <div class="blog-card__title">タイトルが入ります。タイトルが入ります。</div>
+            <div class="blog-card__caption">説明文が入ります。説明文が入ります。説明文が入ります。</div>
+            <div class="blog-card__category-date">
+              <div class="blog-card__category">カテゴリ</div>
+              <div class="blog-card__date">2021.07.20</div>
+            </div>
+          </a>
+        </div>
+        <a class="base-button" href="">詳しく見る</a>
+      </div>
+    </section>
+
+    <!-- お問い合わせ -->
+    <section class="contact">
+      <h2 class="section-title--contact section-title__layout">お問い合わせ</h2>
+      <div class="contact__container">
+        <div class="contact__text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</div>
+        <a href="" class="base-button">お問い合わせへ</a>
+      </div>
+    </section>
+  </body>
 </html>

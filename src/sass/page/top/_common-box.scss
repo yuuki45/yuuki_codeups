@@ -1,0 +1,19 @@
+.common-box {
+    padding-top: rem(24);
+    padding-bottom: rem(21);
+    background-color: #333333;
+}
+
+.common-box__title {
+    font-size: rem(20);
+    line-height: rem(29);
+    letter-spacing: rem(2);
+    text-align: center;
+    padding-left: rem(14);
+}
+
+.common-box__text {
+    line-height: rem(23);
+    letter-spacing: rem(2);
+    padding: rem(24) rem(20) rem(26);
+}

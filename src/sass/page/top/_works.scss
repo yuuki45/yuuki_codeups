@@ -1,0 +1,14 @@
+.works {
+    padding-top: rem(49);
+    margin-bottom: rem(72);
+}
+
+.section-title--works {
+    @include section-title("Works")
+}
+
+.works__container {
+    margin-top: rem(48);
+}
+
+
