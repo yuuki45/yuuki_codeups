@@ -1,7 +1,33 @@
 .contact {
+  padding-top: rem(67);
+  padding-bottom: rem(64);
+  background-color: #3d3d3d;
 
+  @include mq("md") {
+    padding-top: rem(148);
+    padding-bottom: rem(149);
+    margin: auto;
+  }
+}
+
+.contact__container {
+  @include mq("md") {
+    max-width: rem(1580);
+    margin: auto;
+  }
 }
 
 .section-title--contact {
-    @include section-title("Contact")
+  @include section-title("Contact", rem(90), auto, rem(-45));
+}
+
+.contact__text {
+  line-height: rem(23);
+  letter-spacing: rem(2);
+  padding: rem(20) rem(19) rem(46) rem(21);
+
+  @include mq("md") {
+    text-align: center;
+    padding-bottom: rem(63);
+  }
 }

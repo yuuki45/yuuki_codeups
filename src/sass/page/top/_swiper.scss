@@ -1,3 +1,14 @@
+.swiper {
+  @include mq("md") {
+    width: rem(557);
+    max-width: 100%;
+    position: absolute;
+    z-index: 1;
+    top: rem(81);
+    left: rem(0);
+  }
+}
+
 .swiper-pagination {
   z-index: 1;
 }
@@ -19,6 +30,11 @@
   width: 100%;
   margin: auto;
   padding-right: rem(3);
+
+  @include mq("md") {
+    padding-right: rem(42);
+    padding-top: rem(3);
+  }
 }
 
 .swiper-slide {

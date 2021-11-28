@@ -3,12 +3,15 @@
   margin-bottom: rem(71);
 
   @include mq("md") {
+    max-width: rem(1580);
+    margin: auto;
     padding-top: rem(90);
+    margin-bottom: rem(155);
   }
 }
 
 .section-title--content {
-  @include section-title("Content")
+  @include section-title("Content", rem(90), auto, rem(0));
 }
 
 .content__container {
@@ -80,22 +83,28 @@
       top: -60%;
       left: 50%;
       transform: translateX(-50%);
+
+      @include mq("md") {
+        font-size: rem(25);
+        line-height: rem(54);
+        top: -58%;
+      }
     }
   }
 }
 
 .content__image--vision1 span {
-    &::before {
-        content: "理念1へ"
-    }
+  &::before {
+    content: "理念1へ";
+  }
 }
 .content__image--vision2 span {
-    &::before {
-        content: "理念2へ"
-    }
+  &::before {
+    content: "理念2へ";
+  }
 }
 .content__image--vision3 span {
-    &::before {
-        content: "理念3へ"
-    }
+  &::before {
+    content: "理念3へ";
+  }
 }

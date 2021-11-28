@@ -1,14 +1,25 @@
 .works {
-    padding-top: rem(49);
-    margin-bottom: rem(72);
+  padding-top: rem(49);
+
+  @include mq("md") {
+    max-width: rem(1920);
+    margin: auto;
+  }
 }
 
 .section-title--works {
-    @include section-title("Works")
+  @include section-title("Works", auto, rem(90), rem(-5));
 }
 
 .works__container {
-    margin-top: rem(48);
+  margin-top: rem(48);
+
+  @include mq("md") {
+    position: relative;
+    margin-top: rem(40);
+    width: rem(1190);
+    max-width: 100%;
+    padding-bottom: rem(550);
+    margin-left: auto;
+  }
 }
-
-

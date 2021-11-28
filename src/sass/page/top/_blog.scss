@@ -1,17 +1,34 @@
 .blog {
-    padding-top: rem(99);
-    padding-bottom: rem(120);
+  padding-top: rem(100);
+  padding-bottom: rem(120);
+
+  @include mq("md") {
+    max-width: rem(1280);
+    margin: auto;
+    padding-top: rem(85);
+    padding-bottom: rem(150);
+  }
 }
 
 .section-title--blog {
-    @include section-title("Blog")
+  @include section-title("Blog", auto, rem(90), rem(-20));
 }
 
 .blog__container {
-    padding-top: rem(64);
+  padding-top: rem(68);
+
+  @include mq("md") {
+    padding-top: rem(40);
+  }
 }
 
 .blog__box {
-    padding: 0 rem(20);
-    margin-bottom: rem(24);
+  padding: 0 rem(20);
+  margin-bottom: rem(27);
+
+  @include mq("md") {
+    display: flex;
+    justify-content: center;
+    margin-bottom: rem(29);
+  }
 }

@@ -1,5 +1,5 @@
-@mixin  base-button($display, $width, $margin) {
-  display: $display;
+@mixin base-button($width, $m-width, $margin, $m-margin, $m-fz, $m-padding) {
+  display: block;
   width: $width;
   margin: $margin;
   font-size: rem(20);
@@ -11,6 +11,14 @@
   text-align: center;
   position: relative;
 
+  @include mq("md") {
+    width: $m-width;
+    margin: $m-margin;
+    font-size: $m-fz;
+    line-height: rem(54);
+    padding: $m-padding;
+  }
+
   &::before {
     position: absolute;
     z-index: -1;
@@ -20,19 +28,36 @@
     left: 0;
     width: 0;
     height: 100%;
-    background-color: #333333;
-    transition: all 0.3s ease;
+    background-color: $white;
+    transition: width 0.3s ease;
   }
 
   &:hover::before {
-    width: 100%;
+
+    @include mq("md") {
+      width: 100%;
+    }
   }
 
   &:hover {
-    color: $white;
+
+    @include mq("md") {
+      color: #333333;
+    }
   }
 }
 
 .base-button {
-  @include base-button(block, rem(335), auto)
+  @include base-button
+  (rem(335), rem(360), auto, 0, rem(16), rem(3) rem(0) rem(3) rem(0));
+}
+
+.base-button--blog {
+  @include base-button
+  (rem(335), rem(360), auto, auto, rem(16), rem(3) rem(0) rem(3) rem(0));
+}
+
+.base-button--contact {
+  @include base-button
+  (rem(335), rem(360), auto, auto, rem(20), rem(3) rem(4) rem(3) rem(0));
 }

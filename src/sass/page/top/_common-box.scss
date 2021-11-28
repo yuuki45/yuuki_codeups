@@ -1,19 +1,51 @@
-.common-box {
-    padding-top: rem(24);
-    padding-bottom: rem(21);
-    background-color: #333333;
-}
+@mixin common-box($m-top, $m-left, $m-right, $m-padding) {
+  padding-top: rem(24);
+  padding-bottom: rem(21);
+  background-color: #333333;
 
-.common-box__title {
+  @include mq("md") {
+    width: rem(896);
+    max-width: 100%;
+    padding: $m-padding;
+    position: absolute;
+    top: $m-top;
+    left: $m-left;
+    right: $m-right;
+  }
+
+  .common-box__title {
     font-size: rem(20);
     line-height: rem(29);
     letter-spacing: rem(2);
     text-align: center;
     padding-left: rem(14);
-}
 
-.common-box__text {
+    @include mq("md") {
+      font-size: rem(25);
+      line-height: rem(15);
+      letter-spacing: rem(0.5);
+      text-align: left;
+      padding-left: 0;
+    }
+  }
+
+  .common-box__text {
     line-height: rem(23);
     letter-spacing: rem(2);
-    padding: rem(24) rem(20) rem(26);
+    padding: rem(24) rem(20) rem(27);
+
+    @include mq("md") {
+      line-height: rem(35);
+      letter-spacing: rem(0.5);
+      padding: rem(48) rem(91) rem(48) rem(0);
+    }
+  }
+}
+
+.common-box--works {
+  @include common-box(0, auto, 0, rem(120) 0 rem(118) rem(295));
+}
+
+.common-box--overview {
+  @include common-box(0, 0, auto, rem(119) rem(200) rem(119) rem(89));
 }

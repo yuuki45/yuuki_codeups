@@ -1,8 +1,10 @@
-@mixin section-title($content) {
+@mixin section-title($content, $m-left, $m-right, $m-top) {
     font-size: rem(20);
     line-height: rem(29);
     letter-spacing: rem(2);
     position: relative;
+    display: flex;
+    justify-content: center;
 
     @include mq("md") {
         font-size: rem(30);
@@ -22,15 +24,11 @@
         @include mq("md") {
             font-size: rem(110);
             letter-spacing: rem(2);
-            top: rem(0);
-            left: rem(90);
+            // top: rem(0);
+            top: $m-top;
+            left: $m-left;
+            right: $m-right;
         }
     }
-
-}
-
-.section-title__layout {
-    display: flex;
-    justify-content: center;
 }
 

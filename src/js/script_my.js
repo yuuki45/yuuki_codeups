@@ -1,33 +1,33 @@
 /* ハンバーガーメニュー開閉制御 */
 $(".js-hamburger").click(function () {//ボタンがクリックされたら
-    $(this).toggleClass('is_active');//ボタン自身に is_activeクラスを付与し
-    $(".js-drawer").toggleClass('is_active');//メニューにis_activeクラスを付与
+	$(this).toggleClass('is_active');//ボタン自身に is_activeクラスを付与し
+	$(".js-drawer").toggleClass('is_active');//メニューにis_activeクラスを付与
 
 });
 
 $(".js-drawer a").click(function () {//メニューのリンクがクリックされたら
-    $(".js-hamburger").removeClass('is_active');//ボタンのis_activeクラスを除去し
-    $(".js-drawer").removeClass('is_active');//メニューのis_activeクラスも除去
+	$(".js-hamburger").removeClass('is_active');//ボタンのis_activeクラスを除去し
+	$(".js-drawer").removeClass('is_active');//メニューのis_activeクラスも除去
 
 });
 
 /* ヘッダー制御 */
 $(function () {
-    $(window).on("scroll", function () {
-        const sliderHeight = $(".main-visual").height();
-        if (sliderHeight - 30 < $(this).scrollTop()) {
-            $(".header").addClass("change_color");
-        } else {
-            $(".header").removeClass("change_color");
-        }
-    });
+	$(window).on("scroll", function () {
+		const sliderHeight = $(".main-visual").height();
+		if (sliderHeight - 30 < $(this).scrollTop()) {
+			$(".header").addClass("change_color");
+		} else {
+			$(".header").removeClass("change_color");
+		}
+	});
 });
 
-/* slick */
+/* Swiper */
 var mySwiper = new Swiper('.swiper-container', {
 
 	// スライドの間隔ー単位はpx
-	spaceBetween: 0,
+	spaceBetween: 10,
 	// 表示されるスライドの枚数
 	slidesPerView: 1,
 	// スライドの高さに合わせてSwiperの高さを変える
@@ -61,4 +61,16 @@ var mySwiper = new Swiper('.swiper-container', {
 	}
 });
 
+$('.blog-card').hover(
+	function () {
 
+		//マウスカーソルが重なった時の処理
+		$('.blog-card__category').css('color', '#333333');
+	}
+);
+
+$(function () {
+	$(".blog-card").on("hover", function () {
+		$(this).toggleClass('js-hover');
+	});
+});

@@ -13,7 +13,7 @@
 }
 
 .header__container {
-  max-width: rem(1280);
+  max-width: rem(1580);
   margin: auto;
   height: inherit;
   display: flex;
@@ -35,7 +35,6 @@
 .header__menu {
   line-height: rem(35);
   letter-spacing: rem(2);
-  // font-size: clamp(rem(14), 1.2vw, rem(18));
 
   ul {
     display: flex;
@@ -44,7 +43,10 @@
   li {
     &:not(:first-child) {
       margin-left: rem(32);
-      // margin-left: calc(32 / 1280 * 100vw);
+
+      @include mq("md") {
+        margin-left: rem(30);
+      }
     }
   }
 }

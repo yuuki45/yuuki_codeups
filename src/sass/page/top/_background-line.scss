@@ -1,0 +1,19 @@
+.background-line--top {
+    position: relative;
+    z-index: 0;
+    background-image: linear-gradient(61.1deg, #000, #000 55.49%, #f9f871 55.5%, #f9f871 55.59%, #000 55.6%, #000);
+    
+    @include mq("md") {
+        background: linear-gradient(45deg, #000, #000 48.1%, #f9f871 48.1%, #f9f871 48.2%, #000 48.3%, #000);
+    }
+}
+
+.background-line--bottom {
+    position: relative;
+    z-index: 0;
+    background-image: linear-gradient(105deg, #000, #000 22.89%, #f9f871 22.9%, #f9f871 22.99%, #000 23%, #000);
+    
+    @include mq("md") {
+        background: linear-gradient(-45deg, #000, #000 60.4%, #f9f871 60.4%, #f9f871 60.5%, #000 60.6%, #000);
+    }
+}

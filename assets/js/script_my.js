@@ -26,11 +26,11 @@ $(function () {
     }
   });
 });
-/* slick */
+/* Swiper */
 
 var mySwiper = new Swiper('.swiper-container', {
   // スライドの間隔ー単位はpx
-  spaceBetween: 0,
+  spaceBetween: 10,
   // 表示されるスライドの枚数
   slidesPerView: 1,
   // スライドの高さに合わせてSwiperの高さを変える
@@ -62,4 +62,13 @@ var mySwiper = new Swiper('.swiper-container', {
     type: 'bullets',
     clickable: true
   }
+});
+$('.blog-card').hover(function () {
+  //マウスカーソルが重なった時の処理
+  $('.blog-card__category').css('color', '#333333');
+});
+$(function () {
+  $(".blog-card").on("hover", function () {
+    $(this).toggleClass('js-hover');
+  });
 });
