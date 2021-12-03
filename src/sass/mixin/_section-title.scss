@@ -24,7 +24,6 @@
         @include mq("md") {
             font-size: rem(110);
             letter-spacing: rem(2);
-            // top: rem(0);
             top: $m-top;
             left: $m-left;
             right: $m-right;

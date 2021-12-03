@@ -43,9 +43,9 @@
 }
 
 .common-box--works {
-  @include common-box(0, auto, 0, rem(120) 0 rem(118) rem(295));
+  @include common-box(0, auto, 0, rem(119) 0 rem(118) rem(295));
 }
 
 .common-box--overview {
-  @include common-box(0, 0, auto, rem(119) rem(200) rem(119) rem(89));
+  @include common-box(0, 0, auto, rem(118) rem(200) rem(119) rem(89));
 }

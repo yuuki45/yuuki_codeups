@@ -1,5 +1,5 @@
 .blog {
-  padding-top: rem(100);
+  padding-top: rem(99);
   padding-bottom: rem(120);
 
   @include mq("md") {
@@ -29,6 +29,6 @@
   @include mq("md") {
     display: flex;
     justify-content: center;
-    margin-bottom: rem(29);
+    margin-bottom: rem(27);
   }
 }

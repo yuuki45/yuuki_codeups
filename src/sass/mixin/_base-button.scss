@@ -10,6 +10,7 @@
   padding: rem(9) rem(0) rem(9) rem(0);
   text-align: center;
   position: relative;
+  z-index: 0;
 
   @include mq("md") {
     width: $m-width;

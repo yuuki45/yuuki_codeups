@@ -1,6 +1,6 @@
 .footer {
     position: relative;
-    padding-top: rem(50);
+    padding-top: rem(52);
     padding-bottom: rem(68);
 
     @include mq("md") {
@@ -69,13 +69,42 @@
 .footer__to-top {
     width: rem(45);
     height: rem(45);
+    background-color: #fff;
     position: fixed;
     z-index: 1;
     bottom: rem(48);
     right: rem(20);
+    opacity: 0;
+    transition: all 0.3s ease;
+    
+    &:hover {
+        background-color: #333;
+    }
+
+    &:hover::before {
+        border-color: #fff;
+    }
+
+    &::before {
+        position: absolute;
+        content: "";
+        width: rem(19);
+        height: rem(20);
+        border: 2px solid #333;
+        border-top: none;
+        border-right: none;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-20%) rotate(135deg);
+
+    }
 
     @include mq("md") {
         bottom: rem(60);
         right: rem(30);
+    }
+
+    &.js-to-top {
+        opacity: 1;
     }
 }

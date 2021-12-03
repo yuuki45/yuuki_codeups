@@ -27,14 +27,17 @@ a[href^="tel:"] {
 }
 
 /* ホバー */
+// a {
+//   text-decoration: none;
+//   color: inherit;
+//   transition: all 0.3s;
+//   @include mq("md") {
+//     &:hover {
+//       opacity: 0.9;
+//     }
+//   }
+// }
 a {
   text-decoration: none;
   color: inherit;
-  transition: all 0.3s;
-  @include mq("md") {
-    &:hover {
-      opacity: 0.9;
-    }
-  }
 }
-

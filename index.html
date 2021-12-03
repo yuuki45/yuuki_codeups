@@ -5,18 +5,25 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <meta name="format-detection" content="telephone=no" />
     <!-- meta情報 -->
-    <title></title>
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
+    <title>CodeUps</title>
+    <meta name="description" content="CodeUps" />
+    <meta name="keywords" content="CodeUps" />
+    <meta name="”robots”" content="”noindex”" />
     <!-- ogp -->
-    <meta property="og:title" content="" />
-    <meta property="og:type" content="" />
-    <meta property="og:url" content="" />
-    <meta property="og:image" content="" />
-    <meta property="og:site_name" content="" />
-    <meta property="og:description" content="" />
+    <meta property="og:title" content="CodeUps" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://test1.online-studio.blog/" />
+    <meta
+      property="og:image"
+      content="https://test1.online-studio.blog/assets/images/common/mv.png"
+    />
+    <meta property="og:site_name" content="CodeUps" />
+    <meta
+      property="og:description"
+      content="CodeUpsでコーディングスキルアップ！"
+    />
     <!-- ファビコン -->
-    <link rel="”icon”" href="" />
+    <link rel="icon" href="assets/images/common/favicon.ico" />
     <!-- グーグルフォント -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -30,9 +37,9 @@
     <link rel="stylesheet" href="./assets/css/styles.css" />
     <!-- JavaScript -->
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-    <script defer type="text/javascript" src="./assets/js/swiper.min.js"></script>
-    <script defer type="text/javascript" src="./assets/js/script.js"></script>
-    <script defer type="text/javascript" src="./assets/js/script_my.js"></script>
+    <script defer src="./assets/js/swiper.min.js"></script>
+    <script defer src="./assets/js/script.js"></script>
+    <script defer src="./assets/js/script_my.js"></script>
   </head>
 
   <body>
@@ -49,7 +56,9 @@
             <li><a class="header__link" href="#works">制作実績</a></li>
             <li><a class="header__link" href="#overview">企業概要</a></li>
             <li><a class="header__link" href="#blog">ブログ</a></li>
-            <li><a class="header__contact-button" href="#contact">お問い合わせ</a></li>
+            <li>
+              <a class="header__contact-button" href="#contact">お問い合わせ</a>
+            </li>
           </ul>
         </div>
         <button class="header__hamburger-button js-hamburger u-mobile">
@@ -81,141 +90,209 @@
         <div class="main-visual__image"></div>
       </div>
       <h1 class="main-visual__main-title">メインタイトルが入ります</h1>
-      <p class="main-visual__sub-title">サブタイトルが入ります</p>  
+      <p class="main-visual__sub-title">サブタイトルが入ります</p>
     </div>
 
-    <!-- 背景ライン1 -->
-    <div class="background-line--top">
-      <!-- お知らせ -->
-      <section class="news" id="news">
-        <div class="news__container">
-          <div class="news__box">
-            <div class="news__date">2020.07.20</div>
-            <div class="news__category">お知らせ</div>
-            <a href="" class="news__title">記事タイトルが入ります。記事タイトルが入ります。記事タイトルが入ります。</a>
-          </div>
-          <a href="" class="news__button">すべて見る</a>
+    <!-- お知らせ -->
+    <section class="news" id="news">
+      <div class="news__container">
+        <div class="news__box">
+          <div class="news__date">2020.07.20</div>
+          <div class="news__category">お知らせ</div>
+          <a href="" class="news__title"
+            >記事タイトルが入ります。記事タイトルが入ります。記事タイトルが入ります。</a
+          >
         </div>
-      </section>
+        <a href="" class="news__button">すべて見る</a>
+      </div>
+    </section>
 
-      <!-- 事業内容 -->
-      <section class="content" id="content">
-        <h2 class="section-title--content">事業内容</h2>
-        <div class="content__container">
-          <a href="" class="content__image"><span></span>
-            <img class="u-mobile" src="/assets/images/content/content_00_sp.png" alt="経営理念1">
-            <img class="u-desktop" src="/assets/images/content/content_00.png" alt="経営理念1">
-          </a>
-          <a href="" class="content__image content__image--vision1"><span></span>
-            <img class="u-mobile" src="/assets/images/content/content_01_sp.png" alt="経営理念2">
-            <img class="u-desktop" src="/assets/images/content/content_01.png" alt="経営理念2">
-          </a>
-          <a href="" class="content__image content__image--vision2"><span></span>
-            <img class="u-mobile" src="/assets/images/content/content_02_sp.png" alt="経営理念3">
-            <img class="u-desktop" src="/assets/images/content/content_02.png" alt="経営理念3">
-          </a>
-          <a href="" class="content__image content__image--vision3"><span></span>
-            <img class="u-mobile" src="/assets/images/content/content_03_sp.png" alt="経営理念4">
-            <img class="u-desktop" src="/assets/images/content/content_03.png" alt="経営理念4">
-          </a>
-        </div>
-      </section>
-      
-      <!-- 制作実績 -->
-      <section class="works" id="works">
-        <h2 class="section-title--works">制作実績</h2>
-        <div class="works__container">
-          <div class="swiper"> 
-            <div class="swiper-container">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <img src="/assets/images/works/works_01.jpg" alt="">
-                </div>
-                <div class="swiper-slide">
-                  <img src="/assets/images/works/works_02.jpg" alt="">
-                </div>
-                <div class="swiper-slide">
-                  <img src="/assets/images/works/works_03.jpg" alt="">
+    <main>
+      <div class="background-line--top">
+        <!-- 事業内容 -->
+        <section class="content" id="content">
+          <h2 class="section-title--content">事業内容</h2>
+          <div class="content__container">
+            <a href="" class="content__image"
+              ><span></span>
+              <img
+                class="u-mobile"
+                src="/assets/images/content/content_00_sp.png"
+                alt="経営理念1"
+              />
+              <img
+                class="u-desktop"
+                src="/assets/images/content/content_00.png"
+                alt="経営理念1"
+              />
+            </a>
+            <a href="" class="content__image content__image--vision1"
+              ><span></span>
+              <img
+                class="u-mobile"
+                src="/assets/images/content/content_01_sp.png"
+                alt="経営理念2"
+              />
+              <img
+                class="u-desktop"
+                src="/assets/images/content/content_01.png"
+                alt="経営理念2"
+              />
+            </a>
+            <a href="" class="content__image content__image--vision2"
+              ><span></span>
+              <img
+                class="u-mobile"
+                src="/assets/images/content/content_02_sp.png"
+                alt="経営理念3"
+              />
+              <img
+                class="u-desktop"
+                src="/assets/images/content/content_02.png"
+                alt="経営理念3"
+              />
+            </a>
+            <a href="" class="content__image content__image--vision3"
+              ><span></span>
+              <img
+                class="u-mobile"
+                src="/assets/images/content/content_03_sp.png"
+                alt="経営理念4"
+              />
+              <img
+                class="u-desktop"
+                src="/assets/images/content/content_03.png"
+                alt="経営理念4"
+              />
+            </a>
+          </div>
+        </section>
+
+        <!-- 制作実績 -->
+        <section class="works" id="works">
+          <h2 class="section-title--works">制作実績</h2>
+          <div class="works__container">
+            <div class="swiper">
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img
+                      src="/assets/images/works/works_01.jpg"
+                      alt="制作実績1"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="/assets/images/works/works_02.jpg"
+                      alt="制作実績2"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="/assets/images/works/works_03.jpg"
+                      alt="制作実績3"
+                    />
+                  </div>
                 </div>
               </div>
+              <div class="swiper-pagination"></div>
             </div>
-            <div class="swiper-pagination"></div>
+            <div class="common-box--works">
+              <h3 class="common-box__title">メインタイトルが入ります。</h3>
+              <div class="common-box__text">
+                テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+              </div>
+              <a href="" class="base-button">詳しく見る</a>
+            </div>
           </div>
-          <div class="common-box--works">
-            <h3 class="common-box__title">メインタイトルが入ります。</h3>
-            <div class="common-box__text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</div>
-            <a href="" class="base-button">詳しく見る</a>
+        </section>
+      </div>
+
+      <div class="background-line--bottom">
+        <!-- 企業概要 -->
+        <section class="overview" id="overview">
+          <h2 class="section-title--overview">企業概要</h2>
+          <div class="overview__container">
+            <div class="overview__image">
+              <img
+                src="/assets/images/overview/overview_01.jpg"
+                alt="企業概要"
+              />
+            </div>
+            <div class="common-box--overview">
+              <h3 class="common-box__title">メインタイトルが入ります。</h3>
+              <div class="common-box__text">
+                テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+              </div>
+              <a href="" class="base-button">詳しく見る</a>
+            </div>
           </div>
-        </div>
-      </section>
-    </div>
-  
-    <!-- 背景ライン2 -->
-    <div class="background-line--bottom">
-      <!-- 企業概要 -->
-      <section class="overview" id="overview">
-        <h2 class="section-title--overview">企業概要</h2>
-        <div class="overview__container">
-          <div class="overview__image">
-            <img src="/assets/images/overview/overview_01.jpg" alt="">
+        </section>
+
+        <!-- ブログ -->
+        <section class="blog" id="blog">
+          <h2 class="section-title--blog">ブログ</h2>
+          <div class="blog__container">
+            <div class="blog__box">
+              <a href="" class="blog-card">
+                <div class="blog-card__image">
+                  <img src="/assets/images/blog/blog_01.jpg" alt="記事1" />
+                </div>
+                <div class="blog-card__title">
+                  タイトルが入ります。タイトルが入ります。
+                </div>
+                <div class="blog-card__caption">
+                  説明文が入ります。説明文が入ります。説明文が入ります。
+                </div>
+                <div class="blog-card__category-date">
+                  <div class="blog-card__category">カテゴリ</div>
+                  <div class="blog-card__date">2021.07.20</div>
+                </div>
+              </a>
+              <a href="" class="blog-card">
+                <div class="blog-card__image">
+                  <img src="/assets/images/blog/blog_02.jpg" alt="記事2" />
+                </div>
+                <div class="blog-card__title">
+                  タイトルが入ります。タイトルが入ります。
+                </div>
+                <div class="blog-card__caption">
+                  説明文が入ります。説明文が入ります。説明文が入ります。
+                </div>
+                <div class="blog-card__category-date">
+                  <div class="blog-card__category">カテゴリ</div>
+                  <div class="blog-card__date">2021.07.20</div>
+                </div>
+              </a>
+              <a href="" class="blog-card">
+                <div class="blog-card__image">
+                  <img src="/assets/images/blog/blog_03.jpg" alt="記事3" />
+                </div>
+                <div class="blog-card__title">
+                  タイトルが入ります。タイトルが入ります
+                </div>
+                <div class="blog-card__caption">
+                  説明文が入ります。説明文が入ります。説明文が入ります。
+                </div>
+                <div class="blog-card__category-date">
+                  <div class="blog-card__category">カテゴリ</div>
+                  <div class="blog-card__date">2021.07.20</div>
+                </div>
+              </a>
+            </div>
+            <a class="base-button--blog" href="">詳しく見る</a>
           </div>
-          <div class="common-box--overview">
-            <h3 class="common-box__title">メインタイトルが入ります。</h3>
-            <div class="common-box__text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</div>
-            <a href="" class="base-button">詳しく見る</a>
-          </div>
-        </div>
-      </section>
-  
-      <!-- ブログ -->
-      <section class="blog" id="blog">
-        <h2 class="section-title--blog">ブログ</h2>
-        <div class="blog__container">
-          <div class="blog__box">
-            <a href="" class="blog-card">
-              <div class="blog-card__image">
-                <img src="/assets/images/blog/blog_01.jpg" alt="">
-              </div>
-              <div class="blog-card__title">タイトルが入ります。タイトルが入ります。</div>
-              <div class="blog-card__caption">説明文が入ります。説明文が入ります。説明文が入ります。</div>
-              <div class="blog-card__category-date">
-                <div class="blog-card__category">カテゴリ</div>
-                <div class="blog-card__date">2021.07.20</div>
-              </div>
-            </a>
-            <a href="" class="blog-card">
-              <div class="blog-card__image">
-                <img src="/assets/images/blog/blog_02.jpg" alt="">
-              </div>
-              <div class="blog-card__title">タイトルが入ります。タイトルが入ります。</div>
-              <div class="blog-card__caption">説明文が入ります。説明文が入ります。説明文が入ります。</div>
-              <div class="blog-card__category-date">
-                <div class="blog-card__category">カテゴリ</div>
-                <div class="blog-card__date">2021.07.20</div>
-              </div>
-            </a>
-            <a href="" class="blog-card">
-              <div class="blog-card__image">
-                <img src="/assets/images/blog/blog_03.jpg" alt="">
-              </div>
-              <div class="blog-card__title">タイトルが入ります。タイトルが入ります</div>
-              <div class="blog-card__caption">説明文が入ります。説明文が入ります。説明文が入ります。</div>
-              <div class="blog-card__category-date">
-                <div class="blog-card__category">カテゴリ</div>
-                <div class="blog-card__date">2021.07.20</div>
-              </div>
-            </a>
-          </div>
-          <a class="base-button--blog" href="">詳しく見る</a>
-        </div>
-      </section>
-    </div>
+        </section>
+      </div>
+    </main>
 
     <!-- お問い合わせ -->
     <section class="contact" id="contact">
       <h2 class="section-title--contact">お問い合わせ</h2>
       <div class="contact__container">
-        <div class="contact__text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</div>
+        <div class="contact__text">
+          テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+        </div>
         <a href="" class="base-button--contact test">お問い合わせへ</a>
       </div>
     </section>
@@ -223,7 +300,9 @@
     <!-- フッター -->
     <footer class="footer">
       <div class="footer__container">
-        <div class="footer__logo"><img src="/assets/images/common/codeups_sp.svg" alt=""></div>
+        <div class="footer__logo">
+          <img src="/assets/images/common/codeups_sp.svg" alt="サイトロゴ" />
+        </div>
         <ul>
           <li class="u-mobile"><a href="#">トップ</a></li>
           <li><a href="#news">お知らせ</a></li>
@@ -237,9 +316,7 @@
       </div>
       <div class="footer__copy"><small> © 2021 CodeUps Inc.</small></div>
       <!-- トップページへ戻るボタン -->
-      <a href="#" class="footer__to-top"><img src="/assets/images/common/to-top.svg" alt=""></a>
+      <a href="#" class="footer__to-top"></a>
     </footer>
-
-
   </body>
 </html>

@@ -90,9 +90,14 @@
   top: rem(-5);
   right: rem(22);
 
+  &.is_active {
+    right: 3%;
+    top: 1%;
+  }
+
   span {
     display: inline-block;
-    width: 100%;
+    width: rem(25);
     height: rem(2);
     background-color: $white;
     border-radius: rem(8);

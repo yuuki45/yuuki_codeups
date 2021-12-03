@@ -8,7 +8,7 @@
 }
 
 .section-title--works {
-  @include section-title("Works", auto, rem(90), rem(-5));
+  @include section-title("Works", auto, rem(90), rem(-8));
 }
 
 .works__container {

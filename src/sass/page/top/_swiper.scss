@@ -16,6 +16,11 @@
 .swiper-pagination-bullet {
   background-color: #c4c4c4;
   opacity: 1;
+  margin-bottom: rem(5);
+
+  @include mq("md") {
+    margin-bottom: 0;
+  }
 
   &:not(:first-child) {
     margin-left: rem(11);

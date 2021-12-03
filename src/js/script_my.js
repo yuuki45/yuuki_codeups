@@ -1,13 +1,13 @@
 /* ハンバーガーメニュー開閉制御 */
-$(".js-hamburger").click(function () {//ボタンがクリックされたら
-	$(this).toggleClass('is_active');//ボタン自身に is_activeクラスを付与し
-	$(".js-drawer").toggleClass('is_active');//メニューにis_activeクラスを付与
+$(".js-hamburger").click(function () {
+	$(this).toggleClass('is_active');
+	$(".js-drawer").toggleClass('is_active');
 
 });
 
-$(".js-drawer a").click(function () {//メニューのリンクがクリックされたら
-	$(".js-hamburger").removeClass('is_active');//ボタンのis_activeクラスを除去し
-	$(".js-drawer").removeClass('is_active');//メニューのis_activeクラスも除去
+$(".js-drawer a").click(function () {
+	$(".js-hamburger").removeClass('is_active');
+	$(".js-drawer").removeClass('is_active');
 
 });
 
@@ -61,16 +61,25 @@ var mySwiper = new Swiper('.swiper-container', {
 	}
 });
 
+/* トップへ戻るボタン */
+jQuery(window).on('scroll', function() {
+	const sliderHeight = $(".main-visual").height();
+    if ( sliderHeight < jQuery(this).scrollTop()) {
+        jQuery('.footer__to-top').addClass('js-to-top');
+    } else {
+        jQuery('.footer__to-top').removeClass('js-to-top');
+    }
+});
+
+$('.footer__to-top').click(function(){
+    $('html, body').animate({scrollTop:0}, 'slow');
+    return false;
+});
+
+/* ブログカード */
 $('.blog-card').hover(
 	function () {
-
 		//マウスカーソルが重なった時の処理
 		$('.blog-card__category').css('color', '#333333');
 	}
 );
-
-$(function () {
-	$(".blog-card").on("hover", function () {
-		$(this).toggleClass('js-hover');
-	});
-});
