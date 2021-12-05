@@ -396,6 +396,10 @@ select::-ms-expand {
   }
 }
 
+.footer ul li a:hover {
+  opacity: 0.6;
+}
+
 @media screen and (min-width: 768px) {
   .footer__container {
     display: -webkit-box;
@@ -699,13 +703,12 @@ select::-ms-expand {
   left: 0;
   width: 1px;
   width: 0.0625rem;
-  height: 130%;
+  height: 120%;
   background-color: #F9F871;
   -webkit-transform: rotate(-29deg);
           transform: rotate(-29deg);
   -webkit-transform-origin: left top;
           transform-origin: left top;
-  overflow: hidden;
 }
 
 @media screen and (min-width: 768px) {
@@ -722,11 +725,17 @@ select::-ms-expand {
   overflow: hidden;
 }
 
+@media screen and (min-width: 768px) {
+  .background-line--bottom {
+    overflow: unset;
+  }
+}
+
 .background-line--bottom::before {
   position: absolute;
   content: "";
   display: block;
-  z-index: -1;
+  z-index: -5;
   top: 0%;
   right: 37%;
   width: 1px;

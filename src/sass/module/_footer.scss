@@ -33,6 +33,12 @@
                     margin-left: rem(30);
                 }
             }
+
+            a {
+                &:hover {
+                    opacity: 0.6;
+                }
+            }
         }
     }
 }
