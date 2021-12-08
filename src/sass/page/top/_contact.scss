@@ -18,7 +18,11 @@
 }
 
 .section-title--contact {
-  @include section-title("Contact", rem(90), auto, rem(-45));
+  @include section-title("Contact", rem(0), auto, rem(-45));
+
+  &.section-title__contact--underlayer {
+    font-size: rem(25);
+  }
 }
 
 .contact__text {
