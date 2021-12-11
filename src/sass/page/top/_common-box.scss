@@ -1,16 +1,13 @@
-@mixin common-box($m-top, $m-left, $m-right, $m-padding) {
-  padding-top: rem(24);
-  padding-bottom: rem(21);
+@mixin common-box($m-left, $m-right, $s-padding) {
   background-color: #333333;
-
+  padding: $s-padding;
+  
   @include mq("md") {
-    width: rem(896);
+    width: rem(510);
     max-width: 100%;
-    padding: $m-padding;
-    position: absolute;
-    top: $m-top;
-    left: $m-left;
-    right: $m-right;
+    margin-left: $m-left;
+    margin-right: $m-right;
+    padding-top: 0;
   }
 
   .common-box__title {
@@ -37,15 +34,15 @@
     @include mq("md") {
       line-height: rem(35);
       letter-spacing: rem(0.5);
-      padding: rem(48) rem(91) rem(48) rem(0);
+      padding: rem(48) rem(0) rem(48) rem(0);
     }
   }
 }
 
 .common-box--works {
-  @include common-box(0, auto, 0, rem(119) 0 rem(118) rem(295));
+  @include common-box(rem(32), 0, 0 0 rem(21) 0);
 }
 
 .common-box--overview {
-  @include common-box(0, 0, auto, rem(118) rem(200) rem(119) rem(89));
+  @include common-box(0, rem(32), rem(25) 0 rem(21) 0);
 }

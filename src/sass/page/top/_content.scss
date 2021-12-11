@@ -3,15 +3,13 @@
   margin-bottom: rem(71);
 
   @include mq("md") {
-    max-width: rem(1920);
-    margin: auto;
     padding-top: rem(90);
     margin-bottom: rem(155);
   }
 }
 
 .section-title--content {
-  @include section-title("Content", rem(90), auto, rem(0));
+  @include section-title("Content", rem(0), auto, rem(0));
 }
 
 .content__container {
@@ -72,6 +70,7 @@
     position: relative;
     display: block;
     height: 100%;
+    top: -100%;
 
     &::before {
       position: absolute;
@@ -80,14 +79,14 @@
       line-height: rem(29);
       letter-spacing: rem(2);
       white-space: nowrap;
-      top: -59%;
+      top: 40%;
       left: 50%;
       transform: translateX(-50%);
 
       @include mq("md") {
         font-size: rem(25);
         line-height: rem(54);
-        top: -58%;
+        top: 42%;
       }
     }
   }

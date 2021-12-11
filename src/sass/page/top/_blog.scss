@@ -1,17 +1,19 @@
 .blog {
   padding-top: rem(99);
   padding-bottom: rem(120);
+  max-width: rem(600);
+  margin: auto;
 
   @include mq("md") {
-    max-width: rem(1280);
+    max-width: rem(1140);
     margin: auto;
-    padding-top: rem(85);
+    padding-top: rem(212);
     padding-bottom: rem(150);
   }
 }
 
 .section-title--blog {
-  @include section-title("Blog", auto, rem(90), rem(-20));
+  @include section-title("Blog", auto, rem(0), rem(-20));
 }
 
 .blog__container {
@@ -19,16 +21,5 @@
 
   @include mq("md") {
     padding-top: rem(40);
-  }
-}
-
-.blog__box {
-  padding: 0 rem(20);
-  margin-bottom: rem(27);
-
-  @include mq("md") {
-    display: flex;
-    justify-content: center;
-    margin-bottom: rem(27);
   }
 }

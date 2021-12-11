@@ -38,7 +38,6 @@
     <!-- JavaScript -->
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script defer src="./assets/js/swiper.min.js"></script>
-    <script defer src="./assets/js/script.js"></script>
     <script defer src="./assets/js/script_my.js"></script>
   </head>
 
@@ -46,9 +45,9 @@
     <!-- ヘッダー -->
     <header class="header">
       <div class="header__container">
-        <div class="header__logo">
+        <h1 class="header__logo">
           <img src="/assets/images/common/codeups.svg" alt="サイトロゴ" />
-        </div>
+        </h1>
         <div class="header__menu u-desktop">
           <ul>
             <li><a class="header__link" href="#news">お知らせ</a></li>
@@ -89,8 +88,10 @@
         <div class="main-visual__image"></div>
         <div class="main-visual__image"></div>
       </div>
-      <h1 class="main-visual__main-title">メインタイトルが入ります</h1>
-      <p class="main-visual__sub-title">サブタイトルが入ります</p>
+      <div class="main-visual__container">
+        <h2 class="main-visual__main-title">メインタイトルが入ります</h2>
+        <p class="main-visual__sub-title">サブタイトルが入ります</p>
+      </div>
     </div>
 
     <!-- お知らせ -->
@@ -107,11 +108,12 @@
       </div>
     </section>
 
+    <!-- メインコンテンツ  -->
     <main>
       <div class="background-line--top">
         <!-- 事業内容 -->
         <section class="content" id="content">
-          <h2 class="section-title--content">事業内容</h2>
+          <h2 class="section-title--content section-title__inner">事業内容</h2>
           <div class="content__container">
             <a href="" class="content__image"
               ><span></span>
@@ -170,7 +172,7 @@
 
         <!-- 制作実績 -->
         <section class="works" id="works">
-          <h2 class="section-title--works">制作実績</h2>
+          <h2 class="section-title--works section-title__inner">制作実績</h2>
           <div class="works__container">
             <div class="swiper">
               <div class="swiper-container">
@@ -211,7 +213,7 @@
       <div class="background-line--bottom">
         <!-- 企業概要 -->
         <section class="overview" id="overview">
-          <h2 class="section-title--overview">企業概要</h2>
+          <h2 class="section-title--overview section-title__inner">企業概要</h2>
           <div class="overview__container">
             <div class="overview__image">
               <img
@@ -231,9 +233,9 @@
 
         <!-- ブログ -->
         <section class="blog" id="blog">
-          <h2 class="section-title--blog">ブログ</h2>
+          <h2 class="section-title--blog section-title__inner">ブログ</h2>
           <div class="blog__container">
-            <div class="blog__box">
+            <div class="blog-box">
               <a href="" class="blog-card">
                 <div class="blog-card__image">
                   <img src="/assets/images/blog/blog_01.jpg" alt="記事1" />
@@ -269,7 +271,7 @@
                   <img src="/assets/images/blog/blog_03.jpg" alt="記事3" />
                 </div>
                 <div class="blog-card__title">
-                  タイトルが入ります。タイトルが入ります
+                  タイトルが入ります。タイトルが入ります。
                 </div>
                 <div class="blog-card__caption">
                   説明文が入ります。説明文が入ります。説明文が入ります。
@@ -288,12 +290,12 @@
 
     <!-- お問い合わせ -->
     <section class="contact" id="contact">
-      <h2 class="section-title--contact">お問い合わせ</h2>
+      <h2 class="section-title--contact section-title__inner">お問い合わせ</h2>
       <div class="contact__container">
         <div class="contact__text">
           テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
         </div>
-        <a href="" class="base-button--contact test">お問い合わせへ</a>
+        <a href="" class="base-button--contact">お問い合わせへ</a>
       </div>
     </section>
 

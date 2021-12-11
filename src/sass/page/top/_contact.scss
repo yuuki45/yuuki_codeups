@@ -18,7 +18,7 @@
 }
 
 .section-title--contact {
-  @include section-title("Contact", rem(90), auto, rem(-45));
+  @include section-title("Contact", rem(0), auto, rem(-45));
 }
 
 .contact__text {
