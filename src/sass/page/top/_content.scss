@@ -3,8 +3,6 @@
   margin-bottom: rem(71);
 
   @include mq("md") {
-    max-width: rem(1920);
-    margin: auto;
     padding-top: rem(90);
     margin-bottom: rem(155);
   }
@@ -70,6 +68,7 @@
 
   span {
     position: relative;
+    top: -100%;
     display: block;
     height: 100%;
 
@@ -80,14 +79,14 @@
       line-height: rem(29);
       letter-spacing: rem(2);
       white-space: nowrap;
-      top: -59%;
+      top: 40%;
       left: 50%;
       transform: translateX(-50%);
 
       @include mq("md") {
         font-size: rem(25);
         line-height: rem(54);
-        top: -58%;
+        top: 42%;
       }
     }
   }

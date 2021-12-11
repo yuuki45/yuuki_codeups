@@ -7,12 +7,7 @@
   transition: background 0.6s ease;
 
   @include mq("md") {
-    width: rem(350);
-    margin-bottom: rem(17);
-
-    &:not(:first-child) {
-      margin-left: rem(25);
-    }
+    margin-bottom: rem(0);
   }
 
   &:nth-of-type(1)::before {

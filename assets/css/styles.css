@@ -842,6 +842,22 @@ select::-ms-expand {
   }
 }
 
+.blog-box {
+  padding: 0 20px;
+  padding: 0 1.25rem;
+  margin-bottom: 27px;
+  margin-bottom: 1.6875rem;
+}
+
+@media screen and (min-width: 768px) {
+  .blog-box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem 1.5625rem;
+    margin-bottom: 2.875rem;
+  }
+}
+
 .blog-card {
   display: block;
   color: #333;
@@ -855,11 +871,7 @@ select::-ms-expand {
 
 @media screen and (min-width: 768px) {
   .blog-card {
-    width: 21.875rem;
-    margin-bottom: 1.0625rem;
-  }
-  .blog-card:not(:first-child) {
-    margin-left: 1.5625rem;
+    margin-bottom: 0rem;
   }
 }
 
@@ -1010,9 +1022,9 @@ select::-ms-expand {
 
 @media screen and (min-width: 768px) {
   .blog {
-    max-width: 80rem;
+    max-width: 71.25rem;
     margin: auto;
-    padding-top: 5.3125rem;
+    padding-top: 13.25rem;
     padding-bottom: 9.375rem;
   }
 }
@@ -1060,7 +1072,7 @@ select::-ms-expand {
     letter-spacing: 0.125rem;
     top: -1.25rem;
     left: auto;
-    right: 5.625rem;
+    right: 0rem;
   }
 }
 
@@ -1075,42 +1087,19 @@ select::-ms-expand {
   }
 }
 
-.blog__box {
-  padding: 0 20px;
-  padding: 0 1.25rem;
-  margin-bottom: 27px;
-  margin-bottom: 1.6875rem;
-}
-
-@media screen and (min-width: 768px) {
-  .blog__box {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin-bottom: 1.6875rem;
-  }
-}
-
 .common-box--works {
-  padding-top: 24px;
-  padding-top: 1.5rem;
-  padding-bottom: 21px;
-  padding-bottom: 1.3125rem;
   background-color: #333333;
+  padding: 0 0 21px 0;
+  padding: 0 0 1.3125rem 0;
 }
 
 @media screen and (min-width: 768px) {
   .common-box--works {
-    width: 56rem;
+    width: 31.875rem;
     max-width: 100%;
-    padding: 7.4375rem 0 7.375rem 18.4375rem;
-    position: absolute;
-    top: 0;
-    left: auto;
-    right: 0;
+    margin-left: 2rem;
+    margin-right: 0;
+    padding-top: 0;
   }
 }
 
@@ -1149,27 +1138,23 @@ select::-ms-expand {
   .common-box--works .common-box__text {
     line-height: 2.1875rem;
     letter-spacing: 0.03125rem;
-    padding: 3rem 5.6875rem 3rem 0rem;
+    padding: 3rem 0rem 3rem 0rem;
   }
 }
 
 .common-box--overview {
-  padding-top: 24px;
-  padding-top: 1.5rem;
-  padding-bottom: 21px;
-  padding-bottom: 1.3125rem;
   background-color: #333333;
+  padding: 25px 0 21px 0;
+  padding: 1.5625rem 0 1.3125rem 0;
 }
 
 @media screen and (min-width: 768px) {
   .common-box--overview {
-    width: 56rem;
+    width: 31.875rem;
     max-width: 100%;
-    padding: 7.375rem 12.5rem 7.4375rem 5.5625rem;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: auto;
+    margin-left: 0;
+    margin-right: 2rem;
+    padding-top: 0;
   }
 }
 
@@ -1208,7 +1193,7 @@ select::-ms-expand {
   .common-box--overview .common-box__text {
     line-height: 2.1875rem;
     letter-spacing: 0.03125rem;
-    padding: 3rem 5.6875rem 3rem 0rem;
+    padding: 3rem 0rem 3rem 0rem;
   }
 }
 
@@ -1313,8 +1298,6 @@ select::-ms-expand {
 
 @media screen and (min-width: 768px) {
   .content {
-    max-width: 120rem;
-    margin: auto;
     padding-top: 5.625rem;
     margin-bottom: 9.6875rem;
   }
@@ -1437,6 +1420,7 @@ select::-ms-expand {
 
 .content__image span {
   position: relative;
+  top: -100%;
   display: block;
   height: 100%;
 }
@@ -1451,7 +1435,7 @@ select::-ms-expand {
   letter-spacing: 2px;
   letter-spacing: 0.125rem;
   white-space: nowrap;
-  top: -59%;
+  top: 40%;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -1461,7 +1445,7 @@ select::-ms-expand {
   .content__image span::before {
     font-size: 1.5625rem;
     line-height: 3.375rem;
-    top: -58%;
+    top: 42%;
   }
 }
 
@@ -1524,6 +1508,19 @@ select::-ms-expand {
   height: 100vh;
 }
 
+.main-visual__container {
+  display: grid;
+  height: 100%;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  justify-items: center;
+}
+
+.main-visual__container h2 {
+  margin-bottom: 30px;
+  margin-bottom: 1.875rem;
+}
+
 .main-visual__main-title {
   width: 100%;
   font-size: 28px;
@@ -1533,12 +1530,6 @@ select::-ms-expand {
   font-weight: 700;
   letter-spacing: 0.5px;
   letter-spacing: 0.03125rem;
-  position: absolute;
-  top: 45%;
-  left: 50%;
-  z-index: -1;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
   text-align: center;
 }
 
@@ -1546,7 +1537,6 @@ select::-ms-expand {
   .main-visual__main-title {
     font-size: 3.125rem;
     line-height: 3.125rem;
-    top: 44.5%;
   }
 }
 
@@ -1560,19 +1550,12 @@ select::-ms-expand {
   letter-spacing: 0.5px;
   letter-spacing: 0.03125rem;
   text-align: center;
-  position: absolute;
-  top: 52%;
-  left: 50%;
-  z-index: -1;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
 }
 
 @media screen and (min-width: 768px) {
   .main-visual__sub-title {
     font-size: 1.5625rem;
     line-height: 1.5625rem;
-    top: 53%;
   }
 }
 
@@ -1805,6 +1788,7 @@ select::-ms-expand {
     max-width: 100%;
     max-height: 100%;
     padding: 0.1875rem 0;
+    padding-right: 2.5rem;
   }
 }
 
@@ -1898,10 +1882,8 @@ select::-ms-expand {
 
 @media screen and (min-width: 768px) {
   .overview {
-    max-width: 120rem;
-    margin: auto;
+    max-width: 100%;
     padding-top: 12.625rem;
-    padding-right: 1.25rem;
   }
 }
 
@@ -1947,7 +1929,7 @@ select::-ms-expand {
     font-size: 6.875rem;
     letter-spacing: 0.125rem;
     top: -0.625rem;
-    left: 5.625rem;
+    left: 0rem;
     right: auto;
   }
 }
@@ -1959,11 +1941,26 @@ select::-ms-expand {
 
 @media screen and (min-width: 768px) {
   .overview__container {
-    position: relative;
+    background: -webkit-gradient(linear, right top, left top, from(transparent), color-stop(30%, transparent), color-stop(30%, #333), to(#333));
+    background: linear-gradient(to left, transparent 0%, transparent 30%, #333 30%, #333 100%);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-top: 2.5rem;
-    width: 74.375rem;
-    max-width: 100%;
-    padding-bottom: 42.3125rem;
+    padding-right: 1.875rem;
+    padding-left: 1.875rem;
+    padding-top: 5.625rem;
+    padding-bottom: 4.375rem;
   }
 }
 
@@ -1974,12 +1971,11 @@ select::-ms-expand {
 
 @media screen and (min-width: 768px) {
   .overview__image {
-    position: absolute;
+    position: relative;
     z-index: 1;
     width: 34.8125rem;
     max-width: 100%;
-    top: 5.0625rem;
-    right: 0rem;
+    top: -0.625rem;
   }
 }
 
@@ -2007,16 +2003,19 @@ select::-ms-expand {
 @media screen and (min-width: 768px) {
   .swiper {
     width: 34.8125rem;
-    max-width: 100%;
-    position: absolute;
-    z-index: 1;
-    top: 5.0625rem;
-    left: 0rem;
   }
 }
 
 .swiper-pagination {
   z-index: 1;
+  position: static;
+  background-color: #333333;
+}
+
+@media screen and (min-width: 768px) {
+  .swiper-pagination {
+    background-color: transparent;
+  }
 }
 
 .swiper-pagination-bullet {
@@ -2042,7 +2041,6 @@ select::-ms-expand {
 }
 
 .swiper-pagination-clickable {
-  width: 100%;
   margin: auto;
   padding-right: 3px;
   padding-right: 0.1875rem;
@@ -2090,9 +2088,7 @@ select::-ms-expand {
 
 @media screen and (min-width: 768px) {
   .works {
-    max-width: 120rem;
-    margin: auto;
-    padding-left: 1.25rem;
+    max-width: 100%;
   }
 }
 
@@ -2139,7 +2135,7 @@ select::-ms-expand {
     letter-spacing: 0.125rem;
     top: -0.5rem;
     left: auto;
-    right: 5.625rem;
+    right: 0rem;
   }
 }
 
@@ -2150,12 +2146,22 @@ select::-ms-expand {
 
 @media screen and (min-width: 768px) {
   .works__container {
-    position: relative;
+    background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(30%, transparent), color-stop(30%, #333), to(#333));
+    background: linear-gradient(to right, transparent 0%, transparent 30%, #333 30%, #333 100%);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-top: 2.5rem;
-    width: 74.375rem;
-    max-width: 100%;
-    padding-bottom: 34.375rem;
-    margin-left: auto;
+    padding-top: 5rem;
+    padding-bottom: 3.4375rem;
+    padding-left: 1.875rem;
+    padding-right: 1.875rem;
   }
 }
 
