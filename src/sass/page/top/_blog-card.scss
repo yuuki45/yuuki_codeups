@@ -8,6 +8,21 @@
   
   @include mq("md") {
     margin-bottom: rem(0);
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+    &:hover {
+      background-color: #333333;
+      color: $white;
+  
+      &::before {
+        color: #333;
+      }
+    }
+=======
+>>>>>>> b83e119db2a3358afca381b46b97a395d60b2055
+  }
+>>>>>>> 414d08d702d3de42297138ad48e3e07fabf14537
 
     &:hover {
       background-color: #333333;

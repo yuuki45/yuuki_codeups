@@ -585,6 +585,8 @@ select::-ms-expand {
 
 .header__link::after {
   position: absolute;
+  bottom: 7px;
+  bottom: 0.4375rem;
   content: "";
   bottom: 7px;
   bottom: 0.4375rem;
@@ -602,7 +604,7 @@ select::-ms-expand {
 }
 
 .header__contact-button {
-  display: inline-block;
+  display: block;
   color: #333333;
   background-color: #fff;
   padding: 0px 32px 0px;
@@ -872,6 +874,16 @@ select::-ms-expand {
 @media screen and (min-width: 768px) {
   .blog-card {
     margin-bottom: 0rem;
+<<<<<<< HEAD
+  }
+  .blog-card:hover {
+    background-color: #333333;
+    color: #fff;
+  }
+  .blog-card:hover::before {
+    color: #333;
+=======
+>>>>>>> b83e119db2a3358afca381b46b97a395d60b2055
   }
   .blog-card:hover {
     background-color: #333333;
@@ -1423,6 +1435,7 @@ select::-ms-expand {
   top: -100%;
   display: block;
   height: 100%;
+  top: -100%;
 }
 
 .content__image span::before {
@@ -1789,7 +1802,24 @@ select::-ms-expand {
     max-height: 100%;
     padding: 0.1875rem 0;
     padding-right: 2.5rem;
+<<<<<<< HEAD
   }
+  .news__title::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 0;
+    background-color: #fff;
+    height: 0.0625rem;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+  .news__title:hover::after {
+    width: 92%;
+=======
+>>>>>>> b83e119db2a3358afca381b46b97a395d60b2055
+  }
+<<<<<<< HEAD
   .news__title:hover::after {
     width: 92%;
   }
@@ -1805,6 +1835,8 @@ select::-ms-expand {
   height: 0.0625rem;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+=======
+>>>>>>> 414d08d702d3de42297138ad48e3e07fabf14537
 }
 
 .news__title.news__title--underlayer {
