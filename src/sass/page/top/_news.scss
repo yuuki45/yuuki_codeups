@@ -65,21 +65,22 @@
     max-height: 100%;
     padding: rem(3) 0;
     padding-right: rem(40);
+    
+    &::after {
+      position: absolute;
+      content: "";
+      display: block;
+      width: 0;
+      background-color: $white;
+      height: rem(1);
+      transition: all 0.3s ease;
+    }
+  
+    &:hover::after {
+      width: 92%;
+    }
   }
 
-  &::after {
-    position: absolute;
-    content: "";
-    display: block;
-    width: 0;
-    background-color: $white;
-    height: rem(1);
-    transition: all 0.3s ease;
-  }
-
-  &:hover::after {
-    width: 100%;
-  }
 }
 
 .news__button {
