@@ -874,7 +874,6 @@ select::-ms-expand {
 @media screen and (min-width: 768px) {
   .blog-card {
     margin-bottom: 0rem;
-<<<<<<< HEAD
   }
   .blog-card:hover {
     background-color: #333333;
@@ -882,8 +881,6 @@ select::-ms-expand {
   }
   .blog-card:hover::before {
     color: #333;
-=======
->>>>>>> b83e119db2a3358afca381b46b97a395d60b2055
   }
   .blog-card:hover {
     background-color: #333333;
@@ -1802,7 +1799,9 @@ select::-ms-expand {
     max-height: 100%;
     padding: 0.1875rem 0;
     padding-right: 2.5rem;
-<<<<<<< HEAD
+  }
+  .news__title:hover::after {
+    width: 92%;
   }
   .news__title::after {
     position: absolute;
@@ -1814,34 +1813,13 @@ select::-ms-expand {
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
   }
-  .news__title:hover::after {
-    width: 92%;
-=======
->>>>>>> b83e119db2a3358afca381b46b97a395d60b2055
-  }
-<<<<<<< HEAD
-  .news__title:hover::after {
-    width: 92%;
-  }
-}
-
-.news__title::after {
-  position: absolute;
-  content: "";
-  display: block;
-  width: 0;
-  background-color: #fff;
-  height: 1px;
-  height: 0.0625rem;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-=======
->>>>>>> 414d08d702d3de42297138ad48e3e07fabf14537
 }
 
 .news__title.news__title--underlayer {
   padding-bottom: 7px;
   padding-bottom: 0.4375rem;
+  padding-right: 0px;
+  padding-right: 0rem;
 }
 
 .news__button {
