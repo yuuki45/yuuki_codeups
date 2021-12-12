@@ -8,6 +8,7 @@
 
   @include mq("md") {
     margin-bottom: rem(0);
+<<<<<<< HEAD
     &:hover {
       background-color: #333333;
       color: $white;
@@ -16,6 +17,8 @@
         color: #333;
       }
     }
+=======
+>>>>>>> b83e119db2a3358afca381b46b97a395d60b2055
   }
 
   &:nth-of-type(1)::before {
