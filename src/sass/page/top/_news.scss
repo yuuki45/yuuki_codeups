@@ -93,14 +93,11 @@
     max-height: 100%;
     padding: rem(3) 0;
     padding-right: rem(40);
-<<<<<<< HEAD
     
     &:hover::after {
       width: 92%;
     }
-=======
-<<<<<<< HEAD
-    
+
     &::after {
       position: absolute;
       content: "";
@@ -110,31 +107,11 @@
       height: rem(1);
       transition: all 0.3s ease;
     }
-  
-    &:hover::after {
-      width: 92%;
-    }
   }
-
-=======
->>>>>>> 414d08d702d3de42297138ad48e3e07fabf14537
-  }
-  
-  &::after {
-    position: absolute;
-    content: "";
-    display: block;
-    width: 0;
-    background-color: $white;
-    height: rem(1);
-    transition: all 0.3s ease;
-  }
-  
 
   &.news__title--underlayer {
     padding-bottom: rem(7);
   }
->>>>>>> b83e119db2a3358afca381b46b97a395d60b2055
 }
 
 .news__button {
