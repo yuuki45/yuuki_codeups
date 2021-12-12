@@ -87,12 +87,16 @@
   font-weight: $normal;
   padding: rem(16) rem(0) rem(28) rem(0);
   position: relative;
-
+  
   @include mq("md") {
     max-width: 100%;
     max-height: 100%;
     padding: rem(3) 0;
     padding-right: rem(40);
+    
+    &:hover::after {
+      width: 92%;
+    }
   }
   
   &::after {
@@ -105,9 +109,6 @@
     transition: all 0.3s ease;
   }
   
-  &:hover::after {
-    width: 100%;
-  }
 
   &.news__title--underlayer {
     padding-bottom: rem(7);

@@ -62,8 +62,10 @@
     transition: all 0.4s ease;
   }
 
-  &:hover::after {
-    opacity: 0.6;
+  @include mq("md") {
+    &:hover::after {
+      opacity: 0.6;
+    }
   }
 
   span {
