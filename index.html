@@ -44,22 +44,22 @@
   <body>
     <!-- ヘッダー -->
     <header class="header">
-      <div class="header__container">
+      <div class="header__container js-header">
         <h1 class="header__logo">
           <img src="/assets/images/common/codeups.svg" alt="サイトロゴ" />
         </h1>
-        <div class="header__menu u-desktop">
-          <ul>
-            <li><a class="header__link" href="#news">お知らせ</a></li>
-            <li><a class="header__link" href="#content">事業内容</a></li>
-            <li><a class="header__link" href="#works">制作実績</a></li>
-            <li><a class="header__link" href="#overview">企業概要</a></li>
-            <li><a class="header__link" href="#blog">ブログ</a></li>
-            <li>
-              <a class="header__contact-button" href="#contact">お問い合わせ</a>
+        <nav class="header__nav u-desktop">
+          <ul class="header__nav-links">
+            <li class="header__nav-link"><a href="#news">お知らせ</a></li>
+            <li class="header__nav-link"><a href="#content">事業内容</a></li>
+            <li class="header__nav-link"><a href="#works">制作実績</a></li>
+            <li class="header__nav-link"><a href="#overview">企業概要</a></li>
+            <li class="header__nav-link"><a href="#blog">ブログ</a></li>
+            <li class="header__contact-button">
+              <a href="#contact">お問い合わせ</a>
             </li>
           </ul>
-        </div>
+        </nav>
         <button class="header__hamburger-button js-hamburger u-mobile">
           <span></span>
           <span></span>
@@ -70,14 +70,14 @@
 
     <!-- ドロワーメニュー -->
     <div class="drawer js-drawer">
-      <ul>
-        <li><a href="#">トップ</a></li>
-        <li><a href="#news">お知らせ</a></li>
-        <li><a href="#content">事業内容</a></li>
-        <li><a href="#works">制作実績</a></li>
-        <li><a href="#overview">企業概要</a></li>
-        <li><a href="#blog">ブログ</a></li>
-        <li><a href="#contact">お問い合わせ</a></li>
+      <ul class="drawer__items">
+        <li class="drawer__item"><a href="#">トップ</a></li>
+        <li class="drawer__item"><a href="#news">お知らせ</a></li>
+        <li class="drawer__item"><a href="#content">事業内容</a></li>
+        <li class="drawer__item"><a href="#works">制作実績</a></li>
+        <li class="drawer__item"><a href="#overview">企業概要</a></li>
+        <li class="drawer__item"><a href="#blog">ブログ</a></li>
+        <li class="drawer__item"><a href="#contact">お問い合わせ</a></li>
       </ul>
     </div>
 
@@ -95,7 +95,7 @@
     </div>
 
     <!-- お知らせ -->
-    <section class="news" id="news">
+    <article class="news" id="news">
       <div class="news__container">
         <div class="news__box">
           <div class="news__date">2020.07.20</div>
@@ -104,9 +104,11 @@
             >記事タイトルが入ります。記事タイトルが入ります。記事タイトルが入ります。</a
           >
         </div>
-        <a href="news.html" class="news__button">すべて見る</a>
+        <div class="news__button">
+          <a href="news.html">すべて見る</a>
+        </div>
       </div>
-    </section>
+    </article>
 
     <!-- メインコンテンツ  -->
     <main>
@@ -232,11 +234,11 @@
         </section>
 
         <!-- ブログ -->
-        <section class="blog" id="blog">
+        <section class="blog l-blog" id="blog">
           <h2 class="section-title--blog section-title__inner">ブログ</h2>
           <div class="blog__container">
-            <div class="blog-box">
-              <a href="" class="blog-card">
+            <div class="blog__items cards">
+              <a href="" class="cards__item blog-card">
                 <div class="blog-card__image">
                   <img src="/assets/images/blog/blog_01.jpg" alt="記事1" />
                 </div>
