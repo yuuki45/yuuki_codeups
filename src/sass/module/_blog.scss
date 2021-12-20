@@ -1,14 +1,15 @@
 .blog {
-  padding-top: rem(99);
-  padding-bottom: rem(120);
+  @include mq("md") {
+  }
+}
+
+.l-blog {
   max-width: rem(600);
-  margin: auto;
+  margin: rem(99) auto 0;
 
   @include mq("md") {
     max-width: rem(1140);
-    margin: auto;
-    padding-top: rem(212);
-    padding-bottom: rem(150);
+    margin: rem(212) auto 0;
   }
 }
 

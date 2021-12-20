@@ -4,9 +4,9 @@
   background-color: $black;
   color: $white;
   font-size: rem(16);
+  font-weight: $regular;
   line-height: rem(23);
   letter-spacing: rem(2);
-  font-weight: $regular;
   padding-top: rem(209);
   padding-bottom: rem(208);
   text-align: center;
@@ -23,8 +23,10 @@
     opacity: 1;
     pointer-events: all;
   }
+}
 
-  li {
+.drawer__items {
+  .drawer__item {
     &:not(:last-child) {
       margin-bottom: rem(32);
     }

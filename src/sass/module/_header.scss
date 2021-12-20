@@ -1,23 +1,23 @@
 .header {
   width: 100%;
   height: rem(50);
-  background-color: rgba(17, 17, 17, 0.5);
   position: fixed;
   top: 0;
   left: 0;
   z-index: 10;
-  transition: all 0.6s ease;
-
-  &.change_color {
-    background-color: rgba(17, 17, 17, 1);
-  }
 }
 
 .header__container {
+  background-color: rgba(17, 17, 17, 0.5);
+  transition: all 0.6s ease;
   height: inherit;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.change_color {
+  background-color: rgba(17, 17, 17, 1);
 }
 
 .header__logo {
@@ -31,14 +31,15 @@
   }
 }
 
-.header__menu {
-  line-height: rem(35);
+.header__nav {
+  line-height: rem(50);
   letter-spacing: rem(2);
+}
 
-  ul {
-    display: flex;
-    align-items: center;
-  }
+.header__nav-links {
+  display: flex;
+  align-items: center;
+
   li {
     &:not(:first-child) {
       margin-left: rem(32);
@@ -49,14 +50,12 @@
     }
 
     a {
-      height: rem(50);
-      line-height: rem(50);
-      display: block;
+      display: inline-block;
     }
   }
 }
 
-.header__link {
+.header__nav-link {
   position: relative;
 
   &::after {
@@ -77,13 +76,11 @@
 }
 
 .header__contact-button {
-  display: block;
   color: #333333;
   background-color: $white;
   padding: rem(0) rem(32) rem(0);
   transition: all 0.3s ease;
   
-
   &:hover {
     background-color: #333333;
     color: $white;
@@ -95,13 +92,8 @@
   height: rem(15);
   margin-left: auto;
   position: relative;
-  top: rem(-5);
+  top: rem(0);
   right: rem(22);
-
-  &.is_active {
-    right: 3%;
-    top: 1%;
-  }
 
   span {
     display: inline-block;

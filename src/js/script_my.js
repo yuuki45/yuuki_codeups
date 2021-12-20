@@ -16,9 +16,9 @@ $(function () {
 	$(window).on("scroll", function () {
 		const sliderHeight = $(".main-visual").height();
 		if (sliderHeight - 30 < $(this).scrollTop()) {
-			$(".header").addClass("change_color");
+			$(".js-header").addClass("change_color");
 		} else {
-			$(".header").removeClass("change_color");
+			$(".js-header").removeClass("change_color");
 		}
 	});
 });

@@ -2,11 +2,12 @@
   padding-top: rem(67);
   padding-bottom: rem(64);
   background-color: #3d3d3d;
+  margin-top: rem(120);
 
   @include mq("md") {
     padding-top: rem(148);
     padding-bottom: rem(149);
-    margin: auto;
+    margin: rem(150) auto 0;
   }
 }
 
