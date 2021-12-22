@@ -1,5 +1,8 @@
 .works {
   padding-top: rem(49);
+}
+
+.works__layout {
   max-width: rem(600);
   margin: auto;
 
@@ -10,20 +13,24 @@
 
 .section-title--works {
   @include section-title("Works", auto, rem(0), rem(-8));
+  padding-bottom: rem(40);
 }
 
 .works__container {
   margin-top: rem(48);
-  
+
   @include mq("md") {
-    background: linear-gradient(to right, transparent 0%, transparent 30%, #333 30%, #333 100%);
+    background: linear-gradient(
+      to right,
+      transparent 0%,
+      transparent 30%,
+      #333 30%,
+      #333 100%
+    );
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: rem(40);
-    padding-top: rem(80);
-    padding-bottom: rem(55);
-    padding-left: rem(30);
-    padding-right: rem(30);
+    margin-top: 0;
+    padding: rem(80) rem(30) rem(55) rem(30);
   }
 }

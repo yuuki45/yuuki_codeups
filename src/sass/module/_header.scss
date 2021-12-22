@@ -5,19 +5,19 @@
   top: 0;
   left: 0;
   z-index: 10;
-}
-
-.header__container {
   background-color: rgba(17, 17, 17, 0.5);
   transition: all 0.6s ease;
-  height: inherit;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 
 .change_color {
   background-color: rgba(17, 17, 17, 1);
+}
+
+.header__container {
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .header__logo {

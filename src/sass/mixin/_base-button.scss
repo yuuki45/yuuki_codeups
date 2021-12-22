@@ -1,5 +1,4 @@
 @mixin base-button($width, $m-width, $margin, $m-margin, $m-fz, $m-padding) {
-  display: block;
   width: $width;
   margin: $margin;
   font-size: rem(20);

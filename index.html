@@ -43,8 +43,8 @@
 
   <body>
     <!-- ヘッダー -->
-    <header class="header">
-      <div class="header__container js-header">
+    <header class="header js-header">
+      <div class="header__container">
         <h1 class="header__logo">
           <img src="/assets/images/common/codeups.svg" alt="サイトロゴ" />
         </h1>
@@ -114,66 +114,66 @@
     <main>
       <div class="background-line--top">
         <!-- 事業内容 -->
-        <section class="content" id="content">
+        <section class="content content__layout" id="content">
           <h2 class="section-title--content section-title__inner">事業内容</h2>
           <div class="content__container">
             <a href="" class="content__image"
               ><span></span>
-              <img
-                class="u-mobile"
-                src="/assets/images/content/content_00_sp.png"
-                alt="経営理念1"
-              />
-              <img
-                class="u-desktop"
-                src="/assets/images/content/content_00.png"
-                alt="経営理念1"
-              />
+              <picture>
+                <source
+                  media="(min-width: 768px)"
+                  srcset="/assets/images/content/content_00.png"
+                />
+                <img
+                  src="/assets/images/content/content_00_sp.png"
+                  alt="経営理念"
+                />
+              </picture>
             </a>
             <a href="" class="content__image content__image--vision1"
               ><span></span>
-              <img
-                class="u-mobile"
-                src="/assets/images/content/content_01_sp.png"
-                alt="経営理念2"
-              />
-              <img
-                class="u-desktop"
-                src="/assets/images/content/content_01.png"
-                alt="経営理念2"
-              />
+              <picture>
+                <source
+                  media="(min-width: 768px)"
+                  srcset="/assets/images/content/content_01.png"
+                />
+                <img
+                  src="/assets/images/content/content_01_sp.png"
+                  alt="経営理念1"
+                />
+              </picture>
             </a>
             <a href="" class="content__image content__image--vision2"
               ><span></span>
-              <img
-                class="u-mobile"
-                src="/assets/images/content/content_02_sp.png"
-                alt="経営理念3"
-              />
-              <img
-                class="u-desktop"
-                src="/assets/images/content/content_02.png"
-                alt="経営理念3"
-              />
+              <picture>
+                <source
+                  media="(min-width: 768px)"
+                  srcset="/assets/images/content/content_02.png"
+                />
+                <img
+                  src="/assets/images/content/content_02_sp.png"
+                  alt="経営理念2"
+                />
+              </picture>
             </a>
             <a href="" class="content__image content__image--vision3"
               ><span></span>
-              <img
-                class="u-mobile"
-                src="/assets/images/content/content_03_sp.png"
-                alt="経営理念4"
-              />
-              <img
-                class="u-desktop"
-                src="/assets/images/content/content_03.png"
-                alt="経営理念4"
-              />
+              <picture>
+                <source
+                  media="(min-width: 768px)"
+                  srcset="/assets/images/content/content_03.png"
+                />
+                <img
+                  src="/assets/images/content/content_03_sp.png"
+                  alt="経営理念3"
+                />
+              </picture>
             </a>
           </div>
         </section>
 
         <!-- 制作実績 -->
-        <section class="works" id="works">
+        <section class="works works__layout" id="works">
           <h2 class="section-title--works section-title__inner">制作実績</h2>
           <div class="works__container">
             <div class="swiper">
@@ -206,7 +206,9 @@
               <div class="common-box__text">
                 テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
               </div>
-              <a href="" class="base-button">詳しく見る</a>
+              <div class="base-button">
+                <a href="">詳しく見る</a>
+              </div>
             </div>
           </div>
         </section>
@@ -214,7 +216,7 @@
 
       <div class="background-line--bottom">
         <!-- 企業概要 -->
-        <section class="overview" id="overview">
+        <section class="overview overview__layout" id="overview">
           <h2 class="section-title--overview section-title__inner">企業概要</h2>
           <div class="overview__container">
             <div class="overview__image">
@@ -228,17 +230,19 @@
               <div class="common-box__text">
                 テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
               </div>
-              <a href="" class="base-button">詳しく見る</a>
+              <div class="base-button">
+                <a href="">詳しく見る</a>
+              </div>
             </div>
           </div>
         </section>
 
         <!-- ブログ -->
-        <section class="blog l-blog" id="blog">
+        <section class="blog blog__layout" id="blog">
           <h2 class="section-title--blog section-title__inner">ブログ</h2>
           <div class="blog__container">
-            <div class="blog__items cards">
-              <a href="" class="cards__item blog-card">
+            <div class="blog-items blog-items__layout">
+              <a href="" class="blog-card blog-card__layout">
                 <div class="blog-card__image">
                   <img src="/assets/images/blog/blog_01.jpg" alt="記事1" />
                 </div>
@@ -253,7 +257,7 @@
                   <div class="blog-card__date">2021.07.20</div>
                 </div>
               </a>
-              <a href="" class="blog-card">
+              <a href="" class="blog-card blog-card__layout">
                 <div class="blog-card__image">
                   <img src="/assets/images/blog/blog_02.jpg" alt="記事2" />
                 </div>
@@ -268,7 +272,7 @@
                   <div class="blog-card__date">2021.07.20</div>
                 </div>
               </a>
-              <a href="" class="blog-card">
+              <a href="" class="blog-card blog-card__layout">
                 <div class="blog-card__image">
                   <img src="/assets/images/blog/blog_03.jpg" alt="記事3" />
                 </div>
@@ -284,7 +288,9 @@
                 </div>
               </a>
             </div>
-            <a class="base-button--blog" href="">詳しく見る</a>
+            <div class="base-button--blog">
+              <a href="">詳しく見る</a>
+            </div>
           </div>
         </section>
       </div>
@@ -297,7 +303,9 @@
         <div class="contact__text">
           テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
         </div>
-        <a href="" class="base-button--contact">お問い合わせへ</a>
+        <div class="base-button--contact">
+          <a href="">お問い合わせへ</a>
+        </div>
       </div>
     </section>
 
@@ -307,20 +315,22 @@
         <div class="footer__logo">
           <img src="/assets/images/common/codeups_sp.svg" alt="サイトロゴ" />
         </div>
-        <ul>
-          <li class="u-mobile"><a href="#">トップ</a></li>
-          <li><a href="#news">お知らせ</a></li>
-          <li><a href="#content">事業内容</a></li>
-          <li class="u-desktop"><a href="#works">制作実績</a></li>
-          <li><a href="#overview">企業概要</a></li>
-          <li class="u-mobile"><a href="#blog">ブログ</a></li>
-          <li class="u-desktop"><a href="#blog">自社メディア</a></li>
-          <li><a href="#contact">お問い合わせ</a></li>
+        <ul class="footer__nav">
+          <li class="footer__nav-link u-mobile"><a href="#">トップ</a></li>
+          <li class="footer__nav-link"><a href="#news">お知らせ</a></li>
+          <li class="footer__nav-link"><a href="#content">事業内容</a></li>
+          <li class="footer__nav-link u-desktop"><a href="#works">制作実績</a></li>
+          <li class="footer__nav-link"><a href="#overview">企業概要</a></li>
+          <li class="footer__nav-link u-mobile"><a href="#blog">ブログ</a></li>
+          <li class="footer__nav-link u-desktop"><a href="#blog">自社メディア</a></li>
+          <li class="footer__nav-link"><a href="#contact">お問い合わせ</a></li>
         </ul>
       </div>
       <div class="footer__copy"><small> © 2021 CodeUps Inc.</small></div>
       <!-- トップページへ戻るボタン -->
-      <a href="#" class="footer__to-top"></a>
+      <div class="footer__to-top">
+        <a href="#"></a>
+      </div>
     </footer>
   </body>
 </html>

@@ -177,7 +177,6 @@ select::-ms-expand {
 }
 
 .base-button {
-  display: block;
   width: 335px;
   width: 20.9375rem;
   margin: auto;
@@ -233,7 +232,6 @@ select::-ms-expand {
 }
 
 .base-button--blog {
-  display: block;
   width: 335px;
   width: 20.9375rem;
   margin: auto;
@@ -289,7 +287,6 @@ select::-ms-expand {
 }
 
 .base-button--contact {
-  display: block;
   width: 335px;
   width: 20.9375rem;
   margin: auto;
@@ -429,44 +426,16 @@ select::-ms-expand {
   }
 }
 
-.blog__items {
-  padding: 0 20px;
-  padding: 0 1.25rem;
-  margin-bottom: 27px;
-  margin-bottom: 1.6875rem;
-}
-
-@media screen and (min-width: 768px) {
-  .blog__items {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem 1.5625rem;
-    margin-bottom: 2.875rem;
-  }
-}
-
 .blog-card {
   display: block;
   color: #333;
   background-color: #fff;
-  margin-bottom: 24px;
-  margin-bottom: 1.5rem;
   position: relative;
   -webkit-transition: background 0.6s ease;
   transition: background 0.6s ease;
 }
 
 @media screen and (min-width: 768px) {
-  .blog-card {
-    margin-bottom: 0rem;
-  }
-  .blog-card:hover {
-    background-color: #333333;
-    color: #fff;
-  }
-  .blog-card:hover::before {
-    color: #333;
-  }
   .blog-card:hover {
     background-color: #333333;
     color: #fff;
@@ -487,7 +456,7 @@ select::-ms-expand {
   height: 60px;
   height: 3.75rem;
   border-radius: 50%;
-  background-color: #FFBA6A;
+  background-color: #ffba6a;
   text-align: center;
   line-height: 55px;
   line-height: 3.4375rem;
@@ -499,6 +468,17 @@ select::-ms-expand {
 @media screen and (min-width: 768px) {
   .blog-card:nth-of-type(1)::before {
     top: -4%;
+  }
+}
+
+.blog-card__layout {
+  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .blog-card__layout {
+    margin-bottom: 0rem;
   }
 }
 
@@ -602,17 +582,41 @@ select::-ms-expand {
   margin-right: 1.4375rem;
 }
 
-.l-blog {
-  max-width: 600px;
-  max-width: 37.5rem;
-  margin: 99px auto 0;
-  margin: 6.1875rem auto 0;
+.blog-items {
+  padding: 0 20px;
+  padding: 0 1.25rem;
 }
 
 @media screen and (min-width: 768px) {
-  .l-blog {
+  .blog-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem 1.5625rem;
+  }
+}
+
+.blog-items__layout {
+  margin-bottom: 27px;
+  margin-bottom: 1.6875rem;
+}
+
+@media screen and (min-width: 768px) {
+  .blog-items__layout {
+    margin-bottom: 2.875rem;
+  }
+}
+
+.blog__layout {
+  max-width: 600px;
+  max-width: 37.5rem;
+  margin: 99px auto 120px;
+  margin: 6.1875rem auto 7.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .blog__layout {
     max-width: 71.25rem;
-    margin: 13.25rem auto 0;
+    margin: 13.25rem auto 9.375rem;
   }
 }
 
@@ -834,21 +838,18 @@ select::-ms-expand {
   padding-bottom: 64px;
   padding-bottom: 4rem;
   background-color: #3d3d3d;
-  margin-top: 120px;
-  margin-top: 7.5rem;
 }
 
 @media screen and (min-width: 768px) {
   .contact {
     padding-top: 9.25rem;
     padding-bottom: 9.3125rem;
-    margin: 9.375rem auto 0;
   }
 }
 
 @media screen and (min-width: 768px) {
   .contact__container {
-    max-width: 98.75rem;
+    max-width: 80rem;
     margin: auto;
   }
 }
@@ -923,6 +924,11 @@ select::-ms-expand {
 }
 
 .content {
+  width: 100%;
+  max-width: 100%;
+}
+
+.content__layout {
   padding-top: 50px;
   padding-top: 3.125rem;
   margin-bottom: 71px;
@@ -930,7 +936,7 @@ select::-ms-expand {
 }
 
 @media screen and (min-width: 768px) {
-  .content {
+  .content__layout {
     padding-top: 5.625rem;
     margin-bottom: 9.6875rem;
   }
@@ -1151,12 +1157,12 @@ select::-ms-expand {
 @media screen and (min-width: 768px) {
   .footer {
     padding-top: 2.1875rem;
-    max-width: 98.75rem;
+    max-width: 80rem;
     margin: auto;
   }
 }
 
-.footer ul {
+.footer .footer__nav {
   text-align: center;
   line-height: 23px;
   line-height: 1.4375rem;
@@ -1171,28 +1177,28 @@ select::-ms-expand {
 }
 
 @media screen and (min-width: 768px) {
-  .footer ul {
+  .footer .footer__nav {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
 }
 
-.footer ul li:not(:last-child) {
+.footer .footer__nav .footer__nav-link:not(:last-child) {
   margin-bottom: 8px;
   margin-bottom: 0.5rem;
 }
 
 @media screen and (min-width: 768px) {
-  .footer ul li {
+  .footer .footer__nav .footer__nav-link {
     margin-bottom: 0;
   }
-  .footer ul li:not(:first-child) {
+  .footer .footer__nav .footer__nav-link:not(:first-child) {
     margin-left: 1.875rem;
   }
 }
 
-.footer ul li a:hover {
+.footer .footer__nav .footer__nav-link a:hover {
   opacity: 0.6;
 }
 
@@ -1296,12 +1302,16 @@ select::-ms-expand {
   top: 0;
   left: 0;
   z-index: 10;
-}
-
-.header__container {
   background-color: rgba(17, 17, 17, .5);
   -webkit-transition: all 0.6s ease;
   transition: all 0.6s ease;
+}
+
+.change_color {
+  background-color: #111111;
+}
+
+.header__container {
   height: inherit;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1312,10 +1322,6 @@ select::-ms-expand {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-
-.change_color {
-  background-color: #111111;
 }
 
 .header__logo {
@@ -1672,6 +1678,11 @@ select::-ms-expand {
   }
 }
 
+.news {
+  width: 100%;
+  max-width: 100%;
+}
+
 .news__container {
   width: 1100px;
   width: 68.75rem;
@@ -1880,15 +1891,23 @@ select::-ms-expand {
 .overview {
   padding-top: 120px;
   padding-top: 7.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .overview {
+    padding-top: 12.625rem;
+  }
+}
+
+.overview__layout {
   max-width: 600px;
   max-width: 37.5rem;
   margin: auto;
 }
 
 @media screen and (min-width: 768px) {
-  .overview {
+  .overview__layout {
     max-width: 100%;
-    padding-top: 12.625rem;
   }
 }
 
@@ -2161,13 +2180,16 @@ select::-ms-expand {
 .works {
   padding-top: 49px;
   padding-top: 3.0625rem;
+}
+
+.works__layout {
   max-width: 600px;
   max-width: 37.5rem;
   margin: auto;
 }
 
 @media screen and (min-width: 768px) {
-  .works {
+  .works__layout {
     max-width: 100%;
   }
 }
@@ -2186,6 +2208,8 @@ select::-ms-expand {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-bottom: 40px;
+  padding-bottom: 2.5rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -2237,11 +2261,8 @@ select::-ms-expand {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-top: 2.5rem;
-    padding-top: 5rem;
-    padding-bottom: 3.4375rem;
-    padding-left: 1.875rem;
-    padding-right: 1.875rem;
+    margin-top: 0;
+    padding: 5rem 1.875rem 3.4375rem 1.875rem;
   }
 }
 

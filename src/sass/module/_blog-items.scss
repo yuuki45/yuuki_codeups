@@ -1,11 +1,17 @@
-.blog__items {
+.blog-items {
   padding: 0 rem(20);
-  margin-bottom: rem(27);
 
   @include mq("md") {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: rem(32) rem(25);
+  }
+}
+
+.blog-items__layout {
+  margin-bottom: rem(27);
+
+  @include mq("md") {
     margin-bottom: rem(46);
   }
 }

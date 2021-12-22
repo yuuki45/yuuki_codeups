@@ -3,13 +3,13 @@
   }
 }
 
-.l-blog {
+.blog__layout {
   max-width: rem(600);
-  margin: rem(99) auto 0;
+  margin: rem(99) auto rem(120);
 
   @include mq("md") {
     max-width: rem(1140);
-    margin: rem(212) auto 0;
+    margin: rem(212) auto rem(150);
   }
 }
 
